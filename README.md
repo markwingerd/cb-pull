@@ -5,7 +5,7 @@ This project will run a simple configuration of Django where bulk of the project
 
 ### Setup and Run
 
-- Copy `.env.example` to `.env` and change SECRET_KEY, SQL_DATABASE, SQL_USER, and SQL_PASSWORD as desired. Insecure default values are provided.
+- Copy `.env.example` to `.env` and change SECRET_KEY, SQL_DATABASE, SQL_USER, and SQL_PASSWORD as desired. Insecure default values are provided. Note: You must provide a Crunchbase Api Key as a default is not provided.
 
 - Run `docker-compose build`
 
