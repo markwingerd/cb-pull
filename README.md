@@ -3,6 +3,16 @@ Pulls company information from crunchbase and displays information in a manner t
 
 This project will run a simple configuration of Django where bulk of the project is in calling on crunchbases API or scraping the website for necessary information. Output will be in either raw JSON or a simple Django template output.
 
+### Setup and Run
+
+- Copy `.env.example` to `.env` and change SECRET_KEY, SQL_DATABASE, SQL_USER, and SQL_PASSWORD as desired. Insecure default values are provided.
+
+- Run `docker-compose build`
+
+- Run `docker-compose up -d`
+
+- Go to http://127.0.0.1:8000/
+
 ### Endpoints
 
 #### GET /search/
