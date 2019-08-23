@@ -28,6 +28,16 @@ Params:
  GET /search/?name=cd%20projekt%20red
  ```
 
+
+#### GET /company/
+
+Returns a list of all companies scraped from CrunchBase
+
+Example:
+```
+GET /company/
+```
+
 #### GET /company/{name:string}/
 
 Returns an overview of a company

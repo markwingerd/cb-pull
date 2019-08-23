@@ -1,0 +1,21 @@
+<h1>{{ company.name }}</h1>
+
+<li>Name: {{ company.name }}</li>
+<li>CrunchBase Rank: {{ company.cb_rank }}</li>
+<li>Number of Employees: {{ company.num_employees }}</li>
+<li>Total Funding (USD): {{ company.total_funding_usd }}</li>
+<li>Homepage: {{ company.homepage_url }}</li>
+
+<h2>Founders</h2>
+{% for person in company.founders.all %}
+  {% if person.name %}
+    <li>{{ person.name }}: {{ person.cb_rank }}</li>
+  {% endif %}
+{% endfor %}
+
+<h2>Investors</h2>
+{% for person in company.investors.all %}
+  {% if person.name %}
+    <li>{{ person.name }}: {{ person.cb_rank }}</li>
+  {% endif %}
+{% endfor %}

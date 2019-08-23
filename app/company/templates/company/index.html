@@ -1,0 +1,9 @@
+{% if company_list %}
+    <ul>
+    {% for company in company_list %}
+        <li><a href="/company/{{ company.uuid }}/">{{ company.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No companies are available.</p>
+{% endif %}
