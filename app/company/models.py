@@ -12,7 +12,6 @@ class Company(models.Model):
     name = models.CharField(max_length=128)
     cb_api_url = models.CharField(max_length=256)
     cb_rank = models.IntegerField()
-    founded_on = models.DateTimeField()
     num_employees = models.IntegerField()
     total_funding_usd = models.BigIntegerField()
     homepage_url = models.CharField(max_length=256)
