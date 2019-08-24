@@ -16,10 +16,8 @@ services:
     image: postgres:11.5-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data/
-    environment:
-      - POSTGRES_USER=cbuser
-      - POSTGRES_PASSWORD=notarealpassword
-      - POSTGRES_DB=cbpull
+    env_file:
+      - .env
 
 volumes:
   postgres_data:
